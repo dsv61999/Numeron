@@ -6,3 +6,7 @@
 - [Go言語の依存モジュール管理ツール Modules の使い方](https://qiita.com/uchiko/items/64fb3020dd64cf211d4e)
 
 - [Go Modules でインターネット上のレポジトリにはないローカルパッケージを import する方法](https://qiita.com/hnishi/items/a9217249d7832ed2c035)
+
+
+masterブランチ・・・computerとplayerの構造体を分けた
+mainブランチ・・・computerとplayerの構造体を一緒にした

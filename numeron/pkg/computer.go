@@ -8,26 +8,29 @@ import(
 )
 
 //  コンピュータの情報を保持する構造体
-type Computer struct{
-	Name string
-	Num []string
+type Computer_Player struct{
+	Computer_Name string
+	Computer_Num []string
+	Player_Name string
+	Player_Num []string
+	Player_Predict_Num []string
 	// Predict_num []string
 	// Digits_num int
 }
 
 //  コンピュータをセットアップする関数
-func (computer *Computer) SetComputer(num_digits int) {
+func (c_p *Computer_Player) SetComputer(num_digits int) {
 	// var computer Computer
-	computer.Name = "Mike"
+	c_p.Computer_Name = "Mike"
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < num_digits; i++ {
-		// computer.Num = append(computer.Num, strconv.Itoa(rand.Intn(10)))  //  0〜9の乱数を追加
-		computer.Num = append(computer.Num, strconv.Itoa(i)) //  デバッグ用
+		// c_p.Computer_Num = append(c_p.Computer_Num, strconv.Itoa(rand.Intn(10)))  //  0〜9の乱数を追加
+		c_p.Computer_Num = append(c_p.Computer_Num, strconv.Itoa(i)) //  デバッグ用
 	}
-	DisplaySentence("Hello. My name is " + computer.Name + ". " + "Let's play Numeron !!")
+	DisplaySentence("Hello. My name is " + c_p.Computer_Name + ". " + "Let's play Numeron !!")
 }
 
 //  プレイヤーの予測した数字がコンピュータの数字にどれだけEatとByteしているかを計算する関数
-func (computer *Computer)  {
+// func (c_p *Computer_Player)  {
 	
-}
+// }

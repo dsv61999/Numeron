@@ -10,10 +10,9 @@ func main()  {
 	pkg.DisplayCaption("NumeronApp", 2)
 	num_digits := pkg.InputDigitNum()
 
-	var computer pkg.Computer
-	computer.SetComputer(num_digits)
-	var player pkg.Player
-	player.InputNum(computer.Name, num_digits)
+	var c_p pkg.Computer_Player
+	c_p.SetComputer(num_digits)
+	c_p.InputNum(num_digits)
 
 	// computer := pkg.SetComputer(num_digits)
 	// f := excelize.NewFile()

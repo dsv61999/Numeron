@@ -23,12 +23,12 @@ func  InputDigitNum() int{
 }
 
 //  プレイヤーの予測した数字の入力を処理する関数
-func (player *Player) InputNum(computer_name string, digits_num int)  {
-	DisplayCaption("Please predict " + computer_name + "'s number", 1)
+func (c_p *Computer_Player) InputNum(digits_num int)  {
+	DisplayCaption("Please predict " + c_p.Computer_Name + "'s number", 1)
 	var num string
 	fmt.Scan(&num)
-	player.Predict_num = strings.Split(num, "")
-	// fmt.Println(player.Predict_num[0])
-	// fmt.Println(player.Predict_num[1])
-	// fmt.Println(player.Predict_num[2])
+	c_p.Player_Num = strings.Split(num, "")
+	fmt.Println(c_p.Player_Num[0])
+	fmt.Println(c_p.Player_Num[1])
+	fmt.Println(c_p.Player_Num[2])
 }

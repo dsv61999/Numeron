@@ -8,12 +8,14 @@ import (
 
 func main()  {
 	pkg.DisplayCaption("NumeronApp", 2)
-	num_digits := pkg.InputDigitNum()
 
 	var c_p pkg.Computer_Player
-	c_p.SetComputer(num_digits)
-	c_p.InputNum(num_digits)
-
+	c_p.Turn = 0
+	c_p.InputDigitNum()
+	c_p.InputComputerSelect()
+	c_p.SetComputer()
+	c_p.InputNum()
+	c_p.Count_Comp_Eat_Bite()
 	// computer := pkg.SetComputer(num_digits)
 	// f := excelize.NewFile()
 	// // Create a new sheet.

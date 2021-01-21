@@ -9,4 +9,9 @@
 
 
 masterブランチ・・・computerとplayerの構造体を分けた
-mainブランチ・・・computerとplayerの構造体を一緒にした
+
+mainブランチ・・・computerとplayerの構造体を一緒にした→いったん完成。
+
+TODO
+- コンピュータ側からの予測のフェーズも作る
+- 戦績保存の実装
